@@ -31,8 +31,6 @@ sudo systemctl start nginx
 # Enable NGINX to start on boot
 sudo systemctl enable nginx
 
-# Create a simple HTML page
-echo "<h1>Welcome to NGINX on EC2!</h1>" | sudo tee /var/www/html/index.html
 ```
 
 ## Step 2: Launch EC2 Instance with the User Data Script
@@ -47,7 +45,7 @@ echo "<h1>Welcome to NGINX on EC2!</h1>" | sudo tee /var/www/html/index.html
 8. Add a security group rule to allow HTTP (port 80) and HTTPS (port 443) traffic.
 9. Launch the instance.
 
-## Step 3: Set Up a Custom Domain with AWS Route 53 (Optional)
+## Step 3: Set Up a Custom Domain with AWS Route 53 (Optional) or any domain provider you want
 
 1. Purchase a domain name from any domain registrar (or use AWS Route 53).
 2. In AWS Route 53, create a hosted zone for your domain.
@@ -80,6 +78,12 @@ sudo apt install certbot python3-certbot-nginx -y
 ```bash
 sudo certbot --nginx -d your-domain.com -d www.your-domain.com
 ```
+![Screenshot 2024-10-20 163905](https://github.com/user-attachments/assets/fa586a4c-a284-471a-bfc0-0322951b3170)
+![Screenshot 2024-10-20 205005](https://github.com/user-attachments/assets/15e3da62-970f-47d0-8655-3e310fa9d4b8)
+![Screenshot 2024-10-20 175925](https://github.com/user-attachments/assets/a2b9a96e-4171-4711-8502-fba3a9062a31)
+![Screenshot 2024-10-20 165351](https://github.com/user-attachments/assets/9515a79f-98af-466e-a789-a781fc371309)
+![Screenshot 2024-10-20 164016](https://github.com/user-attachments/assets/bf02ba9e-fcd5-4623-92c8-f38e97a8f684)
+![Screenshot 2024-10-20 163957](https://github.com/user-attachments/assets/5ce5da04-d8fe-4ec2-9e5c-279bd8767bfa)
 
 This command will:
 - Obtain the SSL certificate from Let’s Encrypt
@@ -144,3 +148,15 @@ Restart NGINX after making any changes:
 ```bash
 sudo systemctl restart nginx
 ```
+ You can also congigure everything on the domain name site 
+ ![Screenshot 2024-10-21 105601](https://github.com/user-attachments/assets/afed386d-0efc-4876-b183-e705b2110caf)
+![Screenshot 2024-10-21 104933](https://github.com/user-attachments/assets/64cd387b-02e9-4395-a5b1-e231f2d47b7c)
+
+or Install certbot and include the domain name of the on while configuring it
+![Screenshot 2024-10-21 105739](https://github.com/user-attachments/assets/261759f6-c63f-4145-8eee-9dad459f48a5)
+![Screenshot 2024-10-21 105607](https://github.com/user-attachments/assets/374cc807-0ffa-4b6b-9e8d-9880c6db6952)
+
+check the ip address of your server to confirm the configuration
+
+![Screenshot 2024-10-21 105819](https://github.com/user-attachments/assets/1fd69029-544a-4a37-bcc2-67b18559ccbc)
+![Screenshot 2024-10-21 105800](https://github.com/user-attachments/assets/c2b1a4e8-5668-49dd-8029-976b55dbe5b1)
