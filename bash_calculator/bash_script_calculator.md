@@ -24,8 +24,7 @@ This Bash script acts as a simple calculator, allowing users to perform basic ar
 ###############################################################################
 
 ## Functions to echo part of the script in color
-```
-#!/bin/bash
+
 red_echo() {
     echo -e "\e[32m$1\e[0m"
 }
@@ -78,3 +77,7 @@ Result Display:
 
 Outputs the result of the calculation to the user.
 
+![Screenshot 2024-10-18 104625](https://github.com/user-attachments/assets/274d9831-14cf-437b-97c8-169375fb313b)
+![Screenshot 2024-10-18 104619](https://github.com/user-attachments/assets/5c2cbf49-7929-47e7-9f86-0489c2323f9f)
+![Screenshot 2024-10-18 104152](https://github.com/user-attachments/assets/e222149e-5c9e-40ad-8f3d-537d254191b1)
+![Screenshot 2024-10-18 100050](https://github.com/user-attachments/assets/366c1589-9ddd-40c5-8a97-cdf1705c787b)
