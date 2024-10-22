@@ -138,3 +138,29 @@ enable_nginx
 restart_nginx
 ```
 Remenber to always test scripts before you use them to deploy on the cloud
+![Screenshot 2024-10-18 120530](https://github.com/user-attachments/assets/56845b52-efbc-4b43-b8e3-a4d4088234b1)
+![Screenshot 2024-10-18 120517](https://github.com/user-attachments/assets/d7c495be-88a7-4f25-8f12-bd3efb1a2bcc)
+
+After testing, i used it to create an instance
+![Screenshot 2024-10-18 122345](https://github.com/user-attachments/assets/cb7dd997-68f7-4f28-bbc8-812ed207e46e)
+
+SSH into it to enable Nginx
+![Screenshot 2024-10-18 124903](https://github.com/user-attachments/assets/85376ddc-d283-4fcb-a003-92456fddd784)
+![Screenshot 2024-10-18 122408](https://github.com/user-attachments/assets/69610564-e835-49b3-833d-83240acae53c)
+
+add a static website to the instance
+![Screenshot 2024-10-18 124912](https://github.com/user-attachments/assets/bc1830e8-88f7-46cf-bfd3-1a669b769f28)
+![Screenshot 2024-10-18 125518](https://github.com/user-attachments/assets/c3cc2dae-e6d2-4f5b-b152-e476c4a8462a)
+![Screenshot 2024-10-18 125703](https://github.com/user-attachments/assets/7e05ccfe-be2f-4353-87a7-070fbdcd6279)
+![Screenshot 2024-10-18 123900](https://github.com/user-attachments/assets/80a63707-afc4-4417-a429-55afe9f3a7cb)
+
+Paste the ip of your instance n the browser to check your website
+
+![Screenshot 2024-10-18 130311](https://github.com/user-attachments/assets/b22efb87-1eaf-48ac-9fb7-fea8cc288c9a)
+![Screenshot 2024-10-18 130330](https://github.com/user-attachments/assets/bf696658-d78c-43a8-8457-07ec412e6d7d)
+![Screenshot 2024-10-18 130340](https://github.com/user-attachments/assets/6b77a443-d2dd-44b3-94ed-cce3a28497ea)
+![Screenshot 2024-10-18 130350](https://github.com/user-attachments/assets/08a16fa2-aff7-466c-8325-4763bedf7659)
+![Screenshot 2024-10-18 130400](https://github.com/user-attachments/assets/f4ef5c44-cdf4-4293-b9c8-7d7e3875235e)
+![Screenshot 2024-10-18 130408](https://github.com/user-attachments/assets/d14f68c4-06ea-4921-8d2c-66eb2ed752cf)
+
+You have successfully deployed a static website
